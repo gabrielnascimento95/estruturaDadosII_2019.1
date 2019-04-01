@@ -1,13 +1,19 @@
 package dr.ufjf.dcc012.projcsv;
 
+import com.opencsv.bean.CsvBindByName;
+
 /**
  * classificacoes
  */
-public class classificacoes {
+public class Classificacao {
 
+    @CsvBindByName
     private Integer userId;
+    @CsvBindByName
     private Integer movieId;
+    @CsvBindByName
     private Float rating;
+    @CsvBindByName
     private Double timeStamp;
 
     /**
