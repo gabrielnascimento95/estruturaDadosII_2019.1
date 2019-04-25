@@ -1,0 +1,27 @@
+!SESSION 2019-04-25 20:42:38.110 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  .
+Command-line arguments:  -os linux -ws gtk -arch x86_64 .
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-04-25 20:48:07.530
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2019-04-25 20:48:07.536
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2019-04-25 20:48:07.536
+!MESSAGE Could not write workspace metadata '/home/gabriel/workspace/estruturaDadosII_2019.1/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree'.
+!STACK 0
+java.io.FileNotFoundException: /home/gabriel/workspace/estruturaDadosII_2019.1/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree (Arquivo ou diretório não encontrado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1350)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1134)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
