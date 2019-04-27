@@ -49,8 +49,8 @@ public class Main {
 		//objInsertion.ordenaInsertSort(listInteiros);
 		//objInsertion.imprimeArray(listInteiros);
 		
-		//objBubble.OrdenaBubbleSort(listInteiros);
-		//objBubble.imprimeArray(listInteiros);
+		objBubble.OrdenaBubbleSort(listInteiros);
+		objBubble.imprimeArray(listInteiros);
 		
 		//objSelection.ordenaSelectionSort(listInteiros);
 		//objSelection.imprimeArray(listInteiros);

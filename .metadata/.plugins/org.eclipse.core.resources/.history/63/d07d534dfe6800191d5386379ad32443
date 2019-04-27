@@ -52,8 +52,8 @@ public class Main {
 		//objBubble.OrdenaBubbleSort(listInteiros);
 		//objBubble.imprimeArray(listInteiros);
 		
-		//objSelection.ordenaSelectionSort(listInteiros);
-		//objSelection.imprimeArray(listInteiros);
+		objSelection.ordenaSelectionSort(listInteiros);
+		objSelection.imprimeArray(listInteiros);
 	}
 	
 	

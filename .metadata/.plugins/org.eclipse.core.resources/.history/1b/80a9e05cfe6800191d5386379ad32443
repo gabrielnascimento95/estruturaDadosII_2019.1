@@ -10,7 +10,7 @@ public class SelectionSort {
 	
 	public void ordenaSelectionSort(List<Integer> listInteiros) {
 		int menor;
-		for(int i=0; i <= (listInteiros.size()-2); i++) {
+		for(int i=0; i <(listInteiros.size()-2); i++) {
 			menor = i;
 			for(int j = i+1; j < listInteiros.size(); j++) {
 				if(listInteiros.get(j) < listInteiros.get(menor)) {

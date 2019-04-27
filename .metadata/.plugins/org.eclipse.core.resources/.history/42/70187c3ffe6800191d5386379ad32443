@@ -35,8 +35,6 @@ public class Main {
 		
 		InsertionSort objInsertion = new InsertionSort();
 		BubbleSort objBubble = new BubbleSort();
-		SelectionSort objSelection = new SelectionSort();
-		
 		List<Integer> listInteiros = new ArrayList<Integer>();
 		listInteiros.add(10);
 		listInteiros.add(15);
@@ -49,11 +47,8 @@ public class Main {
 		//objInsertion.ordenaInsertSort(listInteiros);
 		//objInsertion.imprimeArray(listInteiros);
 		
-		//objBubble.OrdenaBubbleSort(listInteiros);
-		//objBubble.imprimeArray(listInteiros);
-		
-		//objSelection.ordenaSelectionSort(listInteiros);
-		//objSelection.imprimeArray(listInteiros);
+		objBubble.OrdenaBubbleSort(listInteiros);
+		objBubble.imprimeArray(listInteiros);
 	}
 	
 	
