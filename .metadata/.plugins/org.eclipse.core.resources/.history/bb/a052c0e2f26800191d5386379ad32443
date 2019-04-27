@@ -33,18 +33,8 @@ public class Main {
 		
 		*/
 		
-		InsertionSort objInsertion = new InsertionSort();
-		List<Integer> listInteiros = new ArrayList<Integer>();
-		listInteiros.add(10);
-		listInteiros.add(15);
-		listInteiros.add(1);
-		listInteiros.add(16);
-		listInteiros.add(9);
-		listInteiros.add(70);
-		listInteiros.add(21);
+		Inser
 		
-		objInsertion.ordenaInsertSort(listInteiros);
-		objInsertion.imprimeArray(listInteiros);
 	}
 	
 	

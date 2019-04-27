@@ -2,8 +2,6 @@ package controller;
 import java.util.ArrayList;
 import java.util.List;
 import model.*;
-import algoritOrdenacao.*;
-
 public class Main {
 
 	/**
@@ -20,7 +18,7 @@ public class Main {
 		for(Pais item : listPais){
 			System.out.println("Código "+ item.getCod() + " Nome: " + item.getNome());
 		}
-		
+		*/
 		
 		LeituraTXT obj = new LeituraTXT();
 		List<Integer> listEntradas = new ArrayList<Integer>();
@@ -30,21 +28,6 @@ public class Main {
 		for(Integer item : listEntradas){
 			System.out.println(item.intValue());
 		}
-		
-		*/
-		
-		InsertionSort objInsertion = new InsertionSort();
-		List<Integer> listInteiros = new ArrayList<Integer>();
-		listInteiros.add(10);
-		listInteiros.add(15);
-		listInteiros.add(1);
-		listInteiros.add(16);
-		listInteiros.add(9);
-		listInteiros.add(70);
-		listInteiros.add(21);
-		
-		objInsertion.ordenaInsertSort(listInteiros);
-		objInsertion.imprimeArray(listInteiros);
 	}
 	
 	
