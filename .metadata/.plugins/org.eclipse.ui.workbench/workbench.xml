@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="11" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -32,13 +32,15 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/Main.java" title="Main.java" tooltip="dcc012/src/controller/Main.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/Main.java" title="Main.java" tooltip="dcc012/src/controller/Main.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/Main.java"/>
-<editorState selectionHorizontalPixel="69" selectionLength="0" selectionOffset="727" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="294" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pais.java" partName="Pais.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/model/Pais.java" title="Pais.java" tooltip="dcc012/src/model/Pais.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/model/Pais.java"/>
@@ -47,6 +49,14 @@
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ratings.java" partName="Ratings.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/model/Ratings.java" title="Ratings.java" tooltip="dcc012/src/model/Ratings.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/model/Ratings.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeituraCSV.java" partName="LeituraCSV.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/LeituraCSV.java" title="LeituraCSV.java" tooltip="dcc012/src/controller/LeituraCSV.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/LeituraCSV.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="477" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeituraTXT.java" partName="LeituraTXT.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/LeituraTXT.java" title="LeituraTXT.java" tooltip="dcc012/src/controller/LeituraTXT.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/LeituraTXT.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -83,10 +93,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="340" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="359" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -262,7 +271,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.1891473" ratioLeft="244" ratioRight="1046" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.1744186" ratioLeft="225" ratioRight="1065" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7488789" ratioLeft="501" ratioRight="168" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -301,6 +310,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/model/pais.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/model/Pais.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/model/Ratings.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/LeituraCSV.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/LeituraTXT.java"/>
 </editors>
 <item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -332,8 +343,50 @@
 <item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="257" y="0"/>
 </item>
-<item active="true" historyLabel="Main.java" index="0">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="516" y="20"/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="1390" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="628" y="0"/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="269" y="0"/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="70" y="0"/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="477" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="294" y="0"/>
+</item>
+<item historyLabel="LeituraCSV.java" index="4">
+<position info="not_deleted" x="477" y="0"/>
+</item>
+<item active="true" historyLabel="LeituraTXT.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -341,6 +394,13 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -352,6 +412,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeituraTXT.java" tooltip="dcc012/src/controller/LeituraTXT.java">
+<persistable path="/dcc012/src/controller/LeituraTXT.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeituraCSV.java" tooltip="dcc012/src/controller/LeituraCSV.java">
+<persistable path="/dcc012/src/controller/LeituraCSV.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ratings.java" tooltip="dcc012/src/model/Ratings.java">
 <persistable path="/dcc012/src/model/Ratings.java"/>
 </file>
