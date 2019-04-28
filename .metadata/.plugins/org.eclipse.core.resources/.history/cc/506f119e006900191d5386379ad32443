@@ -1,0 +1,19 @@
+package algoritOrdenacao;
+
+public class MergeSort {
+	
+	public MergeSort() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void OrdenaMergeSort(int vetor[], int inicio, int fim) {
+        int meio;
+        if (inicio < fim) {
+            meio = (inicio + fim) / 2;
+            OrdenaMergeSort(vetor, inicio, meio);
+            OrdenaMergeSort(vetor, meio + 1, fim);
+            OrdenaMergeSort(vetor, inicio, meio, fim);
+        }
+    }
+
+}
