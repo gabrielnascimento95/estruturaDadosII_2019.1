@@ -33,20 +33,19 @@ public class Main {
 		
 		*/
 		
-		
 		InsertionSort objInsertion = new InsertionSort();
 		BubbleSort objBubble = new BubbleSort();
 		SelectionSort objSelection = new SelectionSort();
 		MergeSort objMerge = new MergeSort();
 		QuickSort objQuick = new QuickSort();
 		
+		List<Integer> listInteirosAux = new ArrayList<Integer>();
 		List<Integer> listInteiros = new ArrayList<Integer>();
 		listInteiros.add(10);
 		listInteiros.add(15);
 		listInteiros.add(1);
 		listInteiros.add(16);
 		listInteiros.add(9);
-		listInteiros.add(34);
 		listInteiros.add(70);
 		listInteiros.add(21);
 		listInteiros.add(45);
@@ -60,7 +59,7 @@ public class Main {
 		//objSelection.ordenaSelectionSort(listInteiros);
 		//objSelection.imprimeArray(listInteiros);
 		
-		objMerge.ordenaMergeSort(listInteiros);
+		objMerge.ordenaMergeSort(listInteiros, 0, listInteiros.size()-1);
 		objMerge.imprimeArray(listInteiros);
 		
 		//objQuick.ordenaQuickSort(listInteiros, 0, listInteiros.size()-1);

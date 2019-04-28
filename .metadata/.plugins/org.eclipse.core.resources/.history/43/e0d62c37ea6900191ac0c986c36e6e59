@@ -18,11 +18,6 @@ public class MergeSort {
         	v[i] = listInteiros.get(i);
         }  
 		
-		ordenaMergeSortAux(v, w, 0, tam-1);
-		
-		for (int i = 0; i < tam; i++){
-        	listInteiros.set(i, v[i]);
-		}
 	}
 	
 	public void ordenaMergeSortAux(int[] v, int[] w, int inicio, int fim) {

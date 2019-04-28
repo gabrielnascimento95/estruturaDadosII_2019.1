@@ -46,7 +46,6 @@ public class Main {
 		listInteiros.add(1);
 		listInteiros.add(16);
 		listInteiros.add(9);
-		listInteiros.add(34);
 		listInteiros.add(70);
 		listInteiros.add(21);
 		listInteiros.add(45);

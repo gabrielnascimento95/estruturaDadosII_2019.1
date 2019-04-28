@@ -1,0 +1,71 @@
+package algoritOrdenacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MergeSort {
+	
+	public MergeSort() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void ordenaMergeSort(List<Integer> listInteiros,List<Integer> listInteirosAux, int inicio, int fim) {
+        if (inicio < fim) {
+            int meio = (inicio + fim) / 2;
+            ordenaMergeSort(listInteiros, listInteirosAux, inicio, meio);
+            ordenaMergeSort(listInteiros, listInteirosAux, meio + 1, fim);
+            intercala(listInteiros, listInteirosAux, inicio, meio, fim);
+        }
+    }
+
+	private void intercala(List<Integer> listInteiros, List<Integer> listInteirosAux, int inicio, int meio, int fim) {
+		int aux1 = meio - inicio + 1;
+		int aux2 = fim -meio;
+				
+		List<Integer> listInteirosAux1 = new ArrayList<Integer>();
+		List<Integer> listInteirosAux2 = new ArrayList<Integer>();
+        
+        for (int i = 0; i < aux1; ++i) {
+        	listInteirosAux1.add(listInteiros.get(inicio+i));
+            //listInteirosAux1.set(i, listInteiros.get(inicio+i));
+        }
+        
+        for (int j = 0; j < aux2; ++j) {
+        	listInteirosAux2.add(listInteiros.get(meio+1+j));
+        	//listInteirosAux2.set(j, listInteiros.get(meio+1+j));
+        }
+        
+        int i = 0;
+        int j = 0;
+        int k = inicio;
+        
+        while(inicio < aux1 && j < aux2){
+        	if(listInteirosAux1.get(i) <= listInteirosAux2.get(j)){
+        		listInteiros.set(k, listInteirosAux1.get(i));
+        		i++;
+        	}else{
+        		listInteiros.set(k, listInteirosAux2.get(j));
+        		j++;
+        	}
+        	k++;
+        }
+        
+        while(i<aux1){
+        	listInteiros.set(k, listInteirosAux1.get(i));
+        	i++;
+        	k++;
+        }
+        
+        while(j<aux2){
+        	listInteiros.set(k, listInteirosAux2.get(j));
+        	j++;
+        	k++;
+        }
+	}
+	
+	public void imprimeArray(List<Integer> listInteiros){ 
+        for (Integer item : listInteiros){
+        	System.out.print(item + " ");
+        }             
+    }
+}
