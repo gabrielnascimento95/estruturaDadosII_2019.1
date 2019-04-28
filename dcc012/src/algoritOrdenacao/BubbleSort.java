@@ -8,7 +8,7 @@ public class BubbleSort {
 		
 	}
 	
-	public void OrdenaBubbleSort(List<Integer> listInteiros) {
+	public void ordenaBubbleSort(List<Integer> listInteiros) {
 		int n = listInteiros.size();
 		for (int i = 0; i < n-1; i++){
 		  boolean troca = false;	
