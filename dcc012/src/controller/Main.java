@@ -22,7 +22,7 @@ public class Main {
 		}
 		
 		
-		LeituraTXT obj = new LeituraTXT();
+		ManipulacaoTXT obj = new ManipulacaoTXT();
 		List<Integer> listEntradas = new ArrayList<Integer>();
 		obj.ler(listEntradas);
 		System.out.println("\n");
@@ -40,6 +40,7 @@ public class Main {
 		MergeSort objMerge = new MergeSort();
 		QuickSort objQuick = new QuickSort();
 		HeapSort objHeap = new HeapSort();
+		MeuSort objMeuSort = new MeuSort();
 		
 		List<Integer> listInteiros = new ArrayList<Integer>();
 		listInteiros.add(10);
@@ -70,6 +71,9 @@ public class Main {
 		
 		//objHeap.ordenaHeapSort(listInteiros);
 		//objHeap.imprimeArray(listInteiros);
+		
+		//objMeuSort.ordenaMeuSort(listInteiros);
+		//objMeuSort.imprimeArray(listInteiros);
 	}
 	
 	
