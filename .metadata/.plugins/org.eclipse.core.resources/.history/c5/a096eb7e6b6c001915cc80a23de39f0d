@@ -1,0 +1,28 @@
+package algoritOrdenacao;
+
+import java.util.List;
+
+public class MeuSort {
+	
+	public MeuSort() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	//Implementação do algoritmo shell sort
+	
+	public void ordenaMeuSort(List<Integer> listInteiros){
+		
+		//incia com um pulo maior e depois o reduz
+		for(int pulo = listInteiros.size()/2; pulo > 0; pulo /= 2){
+			for(int i = pulo; i < listInteiros.size(); i += 1){
+				int aux = listInteiros.get(i);
+				int j;
+				for(j=i; j > pulo && listInteiros.get(j-pulo) > aux; j -= pulo){
+					listInteiros.set(j, listInteiros.get(j-pulo));
+				}
+				listInteiros.set(j, listInteiros.get(aux));
+			}
+			
+		}
+	}
+}
