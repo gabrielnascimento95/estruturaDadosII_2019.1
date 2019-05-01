@@ -7,7 +7,9 @@
 <fullyQualifiedTypeName name="algoritOrdenacao.InsertionSort"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.BubbleSort"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.SelectionSort"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.MergeSort"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="algoritOrdenacao.QuickSort"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

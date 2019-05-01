@@ -39,7 +39,6 @@ public class Main {
 		SelectionSort objSelection = new SelectionSort();
 		MergeSort objMerge = new MergeSort();
 		QuickSort objQuick = new QuickSort();
-		HeapSort objHeap = new HeapSort();
 		
 		List<Integer> listInteiros = new ArrayList<Integer>();
 		listInteiros.add(10);
@@ -51,7 +50,6 @@ public class Main {
 		listInteiros.add(70);
 		listInteiros.add(21);
 		listInteiros.add(45);
-		listInteiros.add(89);
 		
 		//objInsertion.ordenaInsertSort(listInteiros);
 		//objInsertion.imprimeArray(listInteiros);
@@ -67,9 +65,6 @@ public class Main {
 		
 		//objQuick.ordenaQuickSort(listInteiros, 0, listInteiros.size()-1);
 		//objQuick.imprimeArray(listInteiros);
-		
-		//objHeap.ordenaHeapSort(listInteiros);
-		//objHeap.imprimeArray(listInteiros);
 	}
 	
 	

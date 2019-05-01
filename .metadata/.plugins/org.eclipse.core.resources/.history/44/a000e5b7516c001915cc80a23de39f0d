@@ -1,0 +1,32 @@
+package algoritOrdenacao;
+
+import java.util.List;
+
+public class HeapSort {
+	
+	public HeapSort() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void ordenaHeapSort(List<Integer> listInteiros){
+		
+		//cria a heap
+		for(int i = (listInteiros.size()/2)-1; i >=0; i--){
+			heapify(listInteiros, listInteiros.size(), i);
+		}
+		
+		//extrai um elemento por um da heap
+		for(int i=listInteiros.size()-1; i>=0; i--){
+			int aux = listInteiros.get(0);
+			listInteiros.set(0, listInteiros.get(i));
+			listInteiros.set(i, aux);
+			heapify(listInteiros, i, 0);
+		}
+	}
+
+	private void heapify(List<Integer> listInteiros, int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

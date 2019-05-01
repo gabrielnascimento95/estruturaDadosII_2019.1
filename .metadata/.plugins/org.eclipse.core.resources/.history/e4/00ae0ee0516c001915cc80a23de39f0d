@@ -38,20 +38,6 @@ public class HeapSort {
 		if(dir < n && listInteiros.get(dir) > listInteiros.get(maior)){
 			maior = dir;
 		}
-		
-		//se o maior não é a raiz
-		if(maior != i){
-			int aux = listInteiros.get(i);
-			listInteiros.set(i, listInteiros.get(maior));
-			listInteiros.set(maior, aux);
-			heapify(listInteiros, n, maior);
-		}
 	}
-	
-	public void imprimeArray(List<Integer> listInteiros){ 
-        for (Integer item : listInteiros){
-        	System.out.print(item + " ");
-        }             
-    } 
 	
 }

@@ -68,8 +68,8 @@ public class Main {
 		//objQuick.ordenaQuickSort(listInteiros, 0, listInteiros.size()-1);
 		//objQuick.imprimeArray(listInteiros);
 		
-		//objHeap.ordenaHeapSort(listInteiros);
-		//objHeap.imprimeArray(listInteiros);
+		objHeap.ordenaHeapSort(listInteiros);
+		objHeap.imprimeArray(listInteiros);
 	}
 	
 	
