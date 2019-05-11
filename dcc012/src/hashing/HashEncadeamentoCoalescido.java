@@ -4,9 +4,9 @@ public class HashEncadeamentoCoalescido {
           
       private int key;
       private int value;
-      private LinkedHashEntry next;
+      private HashCoalescido next;
 
-      LinkedHashEntry(int key, int value) {
+      HashCoalescido(int key, int value) {
             this.key = key;
             this.value = value;
             this.next = null;
@@ -24,11 +24,11 @@ public class HashEncadeamentoCoalescido {
             return key;
       }
   
-      public LinkedHashEntry getNext() {
+      public HashCoalescido getNext() {
             return next;
       }
 
-      public void setNext(LinkedHashEntry next) {
+      public void setNext(HashCoalescido next) {
             this.next = next;
       }
 }
@@ -36,9 +36,9 @@ public class HashEncadeamentoCoalescido {
 public class HashMap {
 
       private final static int TABLE_SIZE = 128;
-      LinkedHashEntry[] table;
+      HashCoalescido[] table;
       HashMap() {
-            table = new LinkedHashEntry[TABLE_SIZE];
+            table = new HashCoalescido[TABLE_SIZE];
             for (int i = 0; i < TABLE_SIZE; i++)
                   table[i] = null;
       }
@@ -48,7 +48,7 @@ public class HashMap {
             if (table[hash] == null)
                   return -1;
             else {
-                  LinkedHashEntry entry = table[hash];
+                  HashCoalescido entry = table[hash];
                   while (entry != null && entry.getKey() != key)
                         entry = entry.getNext();
                   if (entry == null)
@@ -61,15 +61,15 @@ public class HashMap {
       public void put(int key, int value) {
             int hash = (key % TABLE_SIZE);
             if (table[hash] == null)
-                  table[hash] = new LinkedHashEntry(key, value);
+                  table[hash] = new HashCoalescido(key, value);
             else {
-                  LinkedHashEntry entry = table[hash];
+                  HashCoalescido entry = table[hash];
                   while (entry.getNext() != null && entry.getKey() != key)
                         entry = entry.getNext();
                   if (entry.getKey() == key)
                         entry.setValue(value);
                   else
-                        entry.setNext(new LinkedHashEntry(key, value));
+                        entry.setNext(new HashCoalescido(key, value));
             }
       }
 
@@ -77,8 +77,8 @@ public class HashMap {
 
             int hash = (key % TABLE_SIZE);
             if (table[hash] != null) {
-                  LinkedHashEntry prevEntry = null;
-                  LinkedHashEntry entry = table[hash];
+                  HashCoalescido prevEntry = null;
+                  HashCoalescido entry = table[hash];
                   while (entry.getNext() != null && entry.getKey() != key) {
                         prevEntry = entry;
                         entry = entry.getNext();
