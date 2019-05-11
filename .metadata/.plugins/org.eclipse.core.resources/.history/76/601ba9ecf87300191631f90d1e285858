@@ -19,8 +19,8 @@ public class HashEnderecamentoAbertoHashDuplo {
 	}
 		
 	public HashEnderecamentoAbertoHashDuplo(List<Integer> listEntradas){
-		this.tamanhoDaTabela = listEntradas.size();
-		dicionario = new TermoDicionario[listEntradas.size()];
+		tamanhoDaTabela = listEntradas.size();
+		dicionario = new TermoDicionario[tamanhoDaTabela];
 	}
 
 	int hash (int valor, int tentativa) {

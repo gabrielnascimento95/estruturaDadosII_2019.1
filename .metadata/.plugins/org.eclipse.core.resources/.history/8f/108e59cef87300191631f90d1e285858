@@ -1,7 +1,5 @@
 package hashing;
 
-import java.util.List;
-
 public class HashEnderecamentoAbertoHashDuplo {
 	
 	private final int tamanhoDaTabela;
@@ -18,9 +16,9 @@ public class HashEnderecamentoAbertoHashDuplo {
 		System.out.println("Contador de colisoes: " + colisoes);
 	}
 		
-	public HashEnderecamentoAbertoHashDuplo(List<Integer> listEntradas){
-		this.tamanhoDaTabela = listEntradas.size();
-		dicionario = new TermoDicionario[listEntradas.size()];
+	public HashEnderecamentoAbertoHashDuplo(int numEsperado){
+		tamanhoDaTabela = numEsperado;
+		dicionario = new TermoDicionario[numEsperado];
 	}
 
 	int hash (int valor, int tentativa) {

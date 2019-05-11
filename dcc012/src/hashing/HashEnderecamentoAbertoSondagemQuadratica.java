@@ -2,11 +2,11 @@ package hashing;
 
 import java.util.List;
 
-public class HashEnderecamentoAbertoHashDuplo {
+public class HashEnderecamentoAbertoSondagemQuadratica {
 	
+	public final TermoDicionario eliminado = new TermoDicionario(-1, -1);
 	private final int tamanhoDaTabela;
-	public TermoDicionario[] dicionario;
-	private final TermoDicionario eliminado = new TermoDicionario(-1, -1);
+	private TermoDicionario[] dicionario;
 	private int colisoes = 0;
 	
 	public void imprimirTabelaHash(){
@@ -18,23 +18,15 @@ public class HashEnderecamentoAbertoHashDuplo {
 		System.out.println("Contador de colisoes: " + colisoes);
 	}
 		
-	public HashEnderecamentoAbertoHashDuplo(List<Integer> listEntradas){
+	public HashEnderecamentoAbertoSondagemQuadratica(List<Integer> listEntradas){
 		this.tamanhoDaTabela = listEntradas.size();
 		dicionario = new TermoDicionario[listEntradas.size()];
 	}
 
 	int hash (int valor, int tentativa) {
-		return (h1(valor)+tentativa*h2(valor)) % tamanhoDaTabela;
+		return (int)(valor+tentativa*0.5+tentativa*tentativa*0.5) % tamanhoDaTabela;
 	}
 	
-	private int h1(int valor) {
-		return valor%tamanhoDaTabela;
-	}
-
-	private int h2(int valor) {
-		return (2*valor+5);
-	}
-
 	boolean insere(int userID, int movieID){
 		int indice;
 		for (int j=0;j<tamanhoDaTabela;j++){
@@ -42,7 +34,9 @@ public class HashEnderecamentoAbertoHashDuplo {
 			if (dicionario[indice] == null || dicionario[indice]==eliminado){
 				dicionario[indice] = new TermoDicionario(userID, movieID);
 				return true;
-			}else colisoes++;
+			}else{
+				colisoes++;
+			} 
 		}
 		return false;
 	}
@@ -73,4 +67,5 @@ public class HashEnderecamentoAbertoHashDuplo {
 		}
 		return false;
 	}
+	
 }

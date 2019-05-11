@@ -1,7 +1,5 @@
 package hashing;
 
-import java.util.List;
-
 public class HashEnderecamentoAbertoHashDuplo {
 	
 	private final int tamanhoDaTabela;
@@ -18,9 +16,9 @@ public class HashEnderecamentoAbertoHashDuplo {
 		System.out.println("Contador de colisoes: " + colisoes);
 	}
 		
-	public HashEnderecamentoAbertoHashDuplo(List<Integer> listEntradas){
-		this.tamanhoDaTabela = listEntradas.size();
-		dicionario = new TermoDicionario[listEntradas.size()];
+	public HashEnderecamentoAbertoHashDuplo(int numEsperado){
+		tamanhoDaTabela = numEsperado;
+		dicionario = new TermoDicionario[numEsperado];
 	}
 
 	int hash (int valor, int tentativa) {
@@ -51,12 +49,8 @@ public class HashEnderecamentoAbertoHashDuplo {
 		int indice;
 		for (int j=0;j<tamanhoDaTabela;j++){
 			indice = hash(chave,j);
-			if (dicionario[indice] == null){
-				return null;
-			} 
-			else if (dicionario[indice] != eliminado && dicionario[indice].getUserID()==chave){
-				return dicionario[indice];
-			}  
+			if (dicionario[indice] == null) return null;
+			else if (dicionario[indice] != eliminado && dicionario[indice].valor==chave) return dicionario[indice]; 
 		}
 		return null;
 	}
@@ -66,7 +60,7 @@ public class HashEnderecamentoAbertoHashDuplo {
 		for (int j=0;j<tamanhoDaTabela;j++){
 			indice = hash(chave,j);
 			if (dicionario[indice] == null) return false;
-			else if (dicionario[indice] != eliminado && dicionario[indice].getUserID()==chave) {
+			else if (dicionario[indice] != eliminado && dicionario[indice].valor==chave) {
 				dicionario[indice] = eliminado;
 				return true; 
 			}

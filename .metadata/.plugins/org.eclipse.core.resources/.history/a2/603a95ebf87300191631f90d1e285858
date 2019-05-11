@@ -24,7 +24,7 @@ public class HashEnderecamentoAbertoSondagemLinear {
 		
 	public HashEnderecamentoAbertoSondagemLinear(List<Integer> listEntradas){
 		this.tamanhoDaTabela = listEntradas.size();
-		this.listDicionario = new TermoDicionario[listEntradas.size()];
+		this.listDicionario = new TermoDicionario[tamanhoDaTabela];
 	}
 
 	public int hash (int valor, int tentativa) {
