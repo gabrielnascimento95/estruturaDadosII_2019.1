@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="hashing.TermoDicionario"/>
+<fullyQualifiedTypeName name="hashing.HashEnderecamentoAbertoSondagemLinear"/>
 </qualifiedTypeNameHistroy>
