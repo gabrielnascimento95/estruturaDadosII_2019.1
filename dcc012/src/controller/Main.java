@@ -1,4 +1,6 @@
 package controller;
+import hashing.HashEnderecamentoAbertoSondagemLinear;
+
 import java.util.ArrayList;
 import java.util.List;
 import model.*;
@@ -41,6 +43,7 @@ public class Main {
 		QuickSort objQuick = new QuickSort();
 		HeapSort objHeap = new HeapSort();
 		MeuSort objMeuSort = new MeuSort();
+		HashEnderecamentoAbertoSondagemLinear objHashLinear;
 		
 		List<Integer> listInteiros = new ArrayList<Integer>();
 		listInteiros.add(10);
@@ -53,6 +56,18 @@ public class Main {
 		listInteiros.add(21);
 		listInteiros.add(45);
 		listInteiros.add(89);
+		
+		List<Integer> listInteirosMovieId = new ArrayList<Integer>();
+		listInteirosMovieId.add(100);
+		listInteirosMovieId.add(152);
+		listInteirosMovieId.add(11);
+		listInteirosMovieId.add(126);
+		listInteirosMovieId.add(94);
+		listInteirosMovieId.add(343);
+		listInteirosMovieId.add(740);
+		listInteirosMovieId.add(251);
+		listInteirosMovieId.add(445);
+		listInteirosMovieId.add(895);
 		
 		//objInsertion.ordenaInsertSort(listInteiros);
 		//objInsertion.imprimeArray(listInteiros);
@@ -74,6 +89,13 @@ public class Main {
 		
 		//objMeuSort.ordenaMeuSort(listInteiros);
 		//objMeuSort.imprimeArray(listInteiros);
+		
+		objHashLinear = new HashEnderecamentoAbertoSondagemLinear(listInteiros);
+		for(int i = 0; i < listInteiros.size(); i++){
+			objHashLinear.insere(listInteiros.get(i), listInteirosMovieId.get(i));
+		}
+		objHashLinear.imprimirTabelaHash();
+		
 	}
 	
 	

@@ -1,0 +1,75 @@
+package hashing;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class HashEnderecamentoAbertoSondagemLinear {
+
+	
+	public class TermoDicionario{
+		public Integer userID;
+		public Integer movieID;
+		public TermoDicionario(int n, int j){
+			this.userID = n;
+			this.movieID = j;
+		}
+	}
+	
+	private final int tamanhoDaTabela;
+	private List<TermoDicionario> listDicionario = new ArrayList<TermoDicionario>();
+	public final TermoDicionario eliminado = new TermoDicionario(-1, -1);
+	private int colisoes = 0;
+
+	public void imprimirTabelaHash(){
+		System.out.println("-----------------------------------------------");
+		for (int i=0;i<dicionario.length;i++){
+			if (dicionario[i] == null) System.out.println("[" + i + "]");
+			else System.out.println("[" + i + "] " + dicionario[i].valor);
+		}
+		System.out.println("Contador de colisoes: " + colisoes);
+	}
+		
+	public HashEnderecamentoAbertoSondagemLinear(int tamTabela){
+		tamanhoDaTabela = tamTabela;
+		dicionario = new TermoDicionario[tamTabela];
+	}
+
+	public int hash (int valor, int tentativa) {
+		return (valor+tentativa) % tamanhoDaTabela;
+	}
+	
+	public boolean insere(int valor, String significado){
+		int indice;
+		for (int j=0;j<tamanhoDaTabela;j++){
+			indice = hash(valor,j);
+			if (dicionario[indice] == null || dicionario[indice]==eliminado){
+				dicionario[indice] = new TermoDicionario(valor, significado);
+				return true;
+			}else colisoes++;
+		}
+		return false;
+	}
+	
+	TermoDicionario busca(int chave){
+		int indice;
+		for (int j=0;j<tamanhoDaTabela;j++){
+			indice = hash(chave,j);
+			if (dicionario[indice] == null) return null;
+			else if (dicionario[indice] != eliminado && dicionario[indice].valor==chave) return dicionario[indice]; 
+		}
+		return null;
+	}
+
+	boolean remove(int chave){
+		int indice;
+		for (int j=0;j<tamanhoDaTabela;j++){
+			indice = hash(chave,j);
+			if (dicionario[indice] == null) return false;
+			else if (dicionario[indice] != eliminado && dicionario[indice].valor==chave) {
+				dicionario[indice] = eliminado;
+				return true; 
+			}
+		}
+		return false;
+	}
+}
