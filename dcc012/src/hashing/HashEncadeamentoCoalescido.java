@@ -35,7 +35,7 @@ public class HashEncadeamentoCoalescido {
 
 public class HashMap {
 
-           private final int tamanhoDaTabela;
+      private final int tamanhoDaTabela;
       HashCoalescido[] tabela;
       HashMap(List<Integer> listEntradas) {
             this.tamanhoDaTabela = listEntradas.size();
@@ -48,13 +48,13 @@ public class HashMap {
             if (tabela[hash] == null)
                   return -1;
             else {
-                  HashCoalescido entry = tabela[hash];
-                  while (entry != null && entry.getChave() != chave)
-                        entry = entry.getNext();
-                  if (entry == null)
+                  HashCoalescido entrada = tabela[hash];
+                  while (entrada != null && entrada.getChave() != chave)
+                        entrada = entrada.getNext();
+                  if (entrada == null)
                         return -1;
                   else
-                        return entry.getValor();
+                        return entrada.getValor();
             }
       }
 
@@ -63,13 +63,13 @@ public class HashMap {
             if (tabela[hash] == null)
                   tabela[hash] = new HashCoalescido(userID, movieID);
             else {
-                  HashCoalescido entry = tabela[hash];
-                  while (entry.getNext() != null && entry.getChave() != userID)
-                        entry = entry.getNext();
-                  if (entry.getChave() == userID)
-                        entry.setValor(movieID);
+                  HashCoalescido entrada = tabela[hash];
+                  while (entrada.getNext() != null && entrada.getChave() != userID)
+                        entrada = entrada.getNext();
+                  if (entrada.getChave() == userID)
+                        entrada.setValor(movieID);
                   else
-                        entry.setNext(new HashCoalescido(userID, movieID));
+                        entrada.setNext(new HashCoalescido(userID, movieID));
             }
       }
 
@@ -77,17 +77,17 @@ public class HashMap {
 
             int hash = (chave % tamanhoDaTabela);
             if (tabela[hash] != null) {
-                  HashCoalescido prevEntry = null;
-                  HashCoalescido entry = tabela[hash];
-                  while (entry.getNext() != null && entry.getChave() != chave) {
-                        prevEntry = entry;
-                        entry = entry.getNext();
+                  HashCoalescido entradaAnterior = null;
+                  HashCoalescido entrada = tabela[hash];
+                  while (entrada.getNext() != null && entrada.getChave() != chave) {
+                        entradaAnterior = entrada;
+                        entrada = entrada.getNext();
                   }
-                  if (entry.getChave() == chave) {
-                        if (prevEntry == null)
-                             tabela[hash] = entry.getNext();
+                  if (entrada.getChave() == chave) {
+                        if (entradaAnterior == null)
+                             tabela[hash] = entrada.getNext();
                         else
-                             prevEntry.setNext(entry.getNext());
+                             entradaAnterior.setNext(entrada.getNext());
                   }
             }
     }
