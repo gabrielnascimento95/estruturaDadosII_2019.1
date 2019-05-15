@@ -61,6 +61,7 @@ public class LeituraCSV {
 	    String csvDivisor = ",";
 	    boolean primeiraLinha = true;
 	    
+	  
 	    try{
 	        br = new BufferedReader(new FileReader(arquivoCSV));
 	        while ((linha = br.readLine()) != null) {

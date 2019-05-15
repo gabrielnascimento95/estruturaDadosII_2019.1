@@ -67,10 +67,10 @@ public class Main {
 		listInteirosMovieId.add(445);
 		listInteirosMovieId.add(895);
 		
-		//long tempoInicio = System.currentTimeMillis();
+		long tempoInicio = System.currentTimeMillis();
 		//objInsertion.ordenaInsertSort(listInteiros);
-		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
-		//arquivoTxt.gravar(1000, tempoFinal);
+		long tempoFinal = System.currentTimeMillis()-tempoInicio;
+		arquivoTxt.gravar(1000, tempoFinal);
 		//objInsertion.imprimeArray(listInteiros);
 		
 		//objBubble.ordenaBubbleSort(listInteiros);

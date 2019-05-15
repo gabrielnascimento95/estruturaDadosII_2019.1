@@ -12,16 +12,6 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		ManipulacaoTXT arquivoTxt = new ManipulacaoTXT();
-		List<Integer> listEntradas = new ArrayList<Integer>();
-		arquivoTxt.ler(listEntradas);
-		System.out.println("\n");
-		System.out.println("---------------Objetos dentro da lista---------------");
-		for(Integer item : listEntradas){
-			System.out.println(item.intValue());
-		}
-		
 		/*
 		LeituraCSV obj = new LeituraCSV();
 		List<Pais> listPais = new ArrayList<Pais>();
@@ -32,6 +22,17 @@ public class Main {
 		for(Pais item : listPais){
 			System.out.println("Código "+ item.getCod() + " Nome: " + item.getNome());
 		}
+		
+		
+		ManipulacaoTXT obj = new ManipulacaoTXT();
+		List<Integer> listEntradas = new ArrayList<Integer>();
+		obj.ler(listEntradas);
+		System.out.println("\n");
+		System.out.println("---------------Objetos dentro da lista---------------");
+		for(Integer item : listEntradas){
+			System.out.println(item.intValue());
+		}
+		
 		*/
 		
 		InsertionSort objInsertion = new InsertionSort();
@@ -67,10 +68,9 @@ public class Main {
 		listInteirosMovieId.add(445);
 		listInteirosMovieId.add(895);
 		
-		//long tempoInicio = System.currentTimeMillis();
+		long tempoInicio = System.currentTimeMillis();
 		//objInsertion.ordenaInsertSort(listInteiros);
-		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
-		//arquivoTxt.gravar(1000, tempoFinal);
+		long tempoFinal = System.currentTimeMillis()-tempoInicio; 
 		//objInsertion.imprimeArray(listInteiros);
 		
 		//objBubble.ordenaBubbleSort(listInteiros);
