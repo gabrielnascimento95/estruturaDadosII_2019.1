@@ -12,9 +12,10 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.HeapSort"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.MeuSort"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="hashing.TermoDicionario"/>
 <fullyQualifiedTypeName name="hashing.HashEnderecamentoAbertoSondagemLinear"/>
+<fullyQualifiedTypeName name="hashing.HashEncadeamentoSeparado.hash"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

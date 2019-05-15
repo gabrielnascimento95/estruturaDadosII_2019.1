@@ -5,6 +5,7 @@ INDEX VERSION 1.126+/home/gabriel/workspace/estruturaDadosII_2019.1/.metadata/.p
 2066489604.index
 2841451250.index
 1913109094.index
+3927719317.index
 2982035129.index
 2233963263.index
 120211678.index
