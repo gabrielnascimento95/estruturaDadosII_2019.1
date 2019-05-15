@@ -70,11 +70,11 @@ public class LeituraCSV {
 		        	continue;
 	        	}
 		        String[] campo = linha.split(csvDivisor);
-		        int userId = Integer.parseInt(campo[campo.length-4]);
-		    	int movieId = Integer.parseInt(campo[campo.length-3]);
-		    	float rating = Float.parseFloat(campo[campo.length-2]);
-		    	long timeStamp = Long.parseLong(campo[campo.length-1]);
-		        listRatings.add(new Ratings(userId, movieId, rating, timeStamp));
+		        int userId = campo[campo.length-1];
+		    	int movieId;
+		    	float rating;
+		    	long timeStamp;
+		        listRatings.add();
 	        }    
 	    }catch (FileNotFoundException e) {
 	        e.printStackTrace();

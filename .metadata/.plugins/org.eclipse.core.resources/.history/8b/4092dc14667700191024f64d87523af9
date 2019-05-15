@@ -74,7 +74,7 @@ public class LeituraCSV {
 		    	int movieId = Integer.parseInt(campo[campo.length-3]);
 		    	float rating = Float.parseFloat(campo[campo.length-2]);
 		    	long timeStamp = Long.parseLong(campo[campo.length-1]);
-		        listRatings.add(new Ratings(userId, movieId, rating, timeStamp));
+		        listRatings.add();
 	        }    
 	    }catch (FileNotFoundException e) {
 	        e.printStackTrace();

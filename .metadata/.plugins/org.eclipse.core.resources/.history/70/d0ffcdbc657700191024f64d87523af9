@@ -65,16 +65,13 @@ public class LeituraCSV {
 	    try{
 	        br = new BufferedReader(new FileReader(arquivoCSV));
 	        while ((linha = br.readLine()) != null) {
-	        	if (primeiraLinha) {
-	        		primeiraLinha = false;
-		        	continue;
-	        	}
+		        	if (primeiraLinha) {
+		        	    primeiraLinha = false;
+		        	    continue;
+		        	  }
 		        String[] campo = linha.split(csvDivisor);
-		        int userId = Integer.parseInt(campo[campo.length-4]);
-		    	int movieId = Integer.parseInt(campo[campo.length-3]);
-		    	float rating = Float.parseFloat(campo[campo.length-2]);
-		    	long timeStamp = Long.parseLong(campo[campo.length-1]);
-		        listRatings.add(new Ratings(userId, movieId, rating, timeStamp));
+		        listRatings.add(new Ratings(campo[campo.length-1], campo[campo.length-2],
+		        		campo[campo.length-1], campo[campo.length-1]));
 	        }    
 	    }catch (FileNotFoundException e) {
 	        e.printStackTrace();

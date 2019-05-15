@@ -7,14 +7,12 @@ import java.io.IOException;
 import java.util.List;
 
 import model.Pais;
-import model.Ratings;
 
 public class LeituraCSV {
 	
 	public LeituraCSV() {
 		// TODO Auto-generated constructor stub
 	}
-	
 	/*
 	public void lerPais(List<Pais> listPais){
 		String arquivoCSV = "/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/arqs/arquivo.csv";
@@ -54,7 +52,7 @@ public class LeituraCSV {
 	}
 	*/
 	
-	public void lerPais(List<Ratings> listRatings){
+	public void lerPais(List<Pais> listPais){
 		String arquivoCSV = "/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/arqs/arquivo.csv";
 	    BufferedReader br = null;
 	    String linha = "";
@@ -62,20 +60,20 @@ public class LeituraCSV {
 	    boolean primeiraLinha = true;
 	    
 	  
-	    try{
+	    try {
 	        br = new BufferedReader(new FileReader(arquivoCSV));
 	        while ((linha = br.readLine()) != null) {
 	        	if (primeiraLinha) {
-	        		primeiraLinha = false;
-		        	continue;
-	        	}
-		        String[] campo = linha.split(csvDivisor);
-		        int userId = Integer.parseInt(campo[campo.length-4]);
-		    	int movieId = Integer.parseInt(campo[campo.length-3]);
-		    	float rating = Float.parseFloat(campo[campo.length-2]);
-		    	long timeStamp = Long.parseLong(campo[campo.length-1]);
-		        listRatings.add(new Ratings(userId, movieId, rating, timeStamp));
-	        }    
+	        	    primeiraLinha = false;
+	        	    continue;
+	        	  }
+	        String[] campo = linha.split(csvDivisor);
+	        listPais.add(new Pais(campo[campo.length-1], campo[campo.length-2]));
+	        System.out.println("País [code= " + campo[campo.length-2] 
+	        									+ " , name=" + campo[campo.length-1] + "]");
+
+	        }
+
 	    }catch (FileNotFoundException e) {
 	        e.printStackTrace();
 	    }catch (IOException e) {
