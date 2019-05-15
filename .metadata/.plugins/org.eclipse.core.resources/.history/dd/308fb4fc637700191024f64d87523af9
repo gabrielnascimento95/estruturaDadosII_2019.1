@@ -2,7 +2,6 @@ package controller;
 
 import java.util.List;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -31,28 +30,14 @@ public class ManipulacaoTXT {
 		     e.getMessage());
 		 }
 	}
-	/*
+	
 	public void gravar(int i, Long tempo){
 		String caminhoArq = "/home/saida.txt";
 		 try{
 			 FileWriter arq = new FileWriter(caminhoArq);
 			 PrintWriter gravarArq = new PrintWriter(arq);
-			 gravarArq.printf("+--Resultado--+%n");
-			 gravarArq.printf("| Entrada: %2d -> Tempo %ld|%n", i, tempo);
+			 
 		     arq.close();
-		 }catch (IOException e) {
-		     System.err.printf("Erro na gravação do arquivo: %s.\n",
-		     e.getMessage());
-		 }
-	}
-	*/
-	
-	public void gravar(int i, Long tempo){
-		String caminhoArq = "/home/saida.txt";
-		 try{
-			BufferedWriter buffWrite = new BufferedWriter(new FileWriter(caminhoArq));
-	        buffWrite.append("Entrada: " +i+"Tempo: "+ tempo+"\n");
-	        buffWrite.close();
 		 }catch (IOException e) {
 		     System.err.printf("Erro na gravação do arquivo: %s.\n",
 		     e.getMessage());
