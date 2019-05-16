@@ -70,4 +70,9 @@ public class QuickSortInsercao {
 			}
 		}
 	}
+        public void imprimeArray(List<Integer> listInteiros){ 
+            for (Integer item : listInteiros){
+        	System.out.print(item + " ");
+        }             
+    }
 }
