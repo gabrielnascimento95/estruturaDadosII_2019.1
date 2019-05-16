@@ -60,5 +60,11 @@ public class QuickSortMediana {
         int temp = listInteiros.get(i);
         listInteiros.set(i, listInteiros.get(j));
         listInteiros.set(j, temp);
-    }    
+    } 
+    
+    public void imprimeArray(List<Integer> listInteiros){ 
+        for (Integer item : listInteiros){
+        	System.out.print(item + " ");
+        }             
+    }
 }
