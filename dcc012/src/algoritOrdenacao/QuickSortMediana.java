@@ -2,7 +2,8 @@ package algoritOrdenacao;
 import java.util.*;
 
 public class QuickSortMediana {
-    public static void QuickSortMediana(List<Integer> listInteiros){        
+    
+    public void QuickSortMediana(List<Integer> listInteiros){        
     	QuickSortMediana(listInteiros, 0, listInteiros.size() - 1);
     }
 
