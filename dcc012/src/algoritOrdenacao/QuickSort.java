@@ -17,10 +17,10 @@ public class QuickSort {
 	}
 
 	private int particionaLista(List<Integer> listInteiros, int inicio, int fim) {
-		int pivo = listInteiros.get(fim);
-		int i = (inicio-1);
+		int pivo = listInteiros.get(inicio);
+		int i = (inicio);
 		
-		for(int j = inicio; j < fim; j++){
+		for(int j = inicio +1; j <= fim; j++){
 			if(listInteiros.get(j) <= pivo){
 				i++;
 				int aux = listInteiros.get(i);
@@ -28,10 +28,10 @@ public class QuickSort {
 				listInteiros.set(j, aux);
 			}
 		}
-		int aux = listInteiros.get(i+1);
-		listInteiros.set(i+1, listInteiros.get(fim));
+		int aux = listInteiros.get(i);
+		listInteiros.set(i, listInteiros.get(fim));
 		listInteiros.set(fim, aux);
-		return i+1;
+		return i;
 	}
 	
 	public void imprimeArray(List<Integer> listInteiros){ 
@@ -40,3 +40,4 @@ public class QuickSort {
         }             
     }
 }
+
