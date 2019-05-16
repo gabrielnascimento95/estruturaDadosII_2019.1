@@ -23,14 +23,14 @@ public class QuickSort {
 		for(int j = inicio +1; j <= fim; j++){
 			if(listInteiros.get(j) <= pivo){
 				i++;
-				int aux = listInteiros.get(i);
-				listInteiros.set(i, listInteiros.get(j));
-				listInteiros.set(j, aux);
+				int aux = listInteiros.get(j);
+				listInteiros.set(j, listInteiros.get(i));
+				listInteiros.set(i, aux);
 			}
 		}
 		int aux = listInteiros.get(i);
-		listInteiros.set(i, listInteiros.get(fim));
-		listInteiros.set(fim, aux);
+		listInteiros.set(i, listInteiros.get(inicio));
+		listInteiros.set(inicio, aux);
 		return i;
 	}
 	
