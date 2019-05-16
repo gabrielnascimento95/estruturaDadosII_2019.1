@@ -2,7 +2,8 @@ package algoritOrdenacao;
 import java.util.*;
 
 public class QuickSortInsercao {
-	public static void InsertionSort(List <Integer> listInteiros, int inicio, int n) {
+
+    public void InsertionSort(List <Integer> listInteiros, int inicio, int n) {
 		for (int i = inicio + 1; i <= n; i++)
 		{
 			int valor = listInteiros.get(i);
@@ -16,7 +17,7 @@ public class QuickSortInsercao {
 		}
 	}
 	
-	public static int particiona(List<Integer> listInteiros, int inicio, int fim)
+	public int particiona(List<Integer> listInteiros, int inicio, int fim)
 	{
 		int pivo = listInteiros.get(fim);
 		int indice = inicio;
@@ -36,7 +37,7 @@ public class QuickSortInsercao {
 		return indice;
 	}
 	
-	public static void QuickSort(List<Integer> listInteiros, int inicio, int fim)
+	public void QuickSort(List<Integer> listInteiros, int inicio, int fim)
 	{
 		if(inicio >= fim)
 			return;
@@ -46,7 +47,7 @@ public class QuickSortInsercao {
 		QuickSort(listInteiros, pivo+1, fim);			
 	}
 	
-	public static void QuickSortInsertion(List<Integer> listInteiros, int inicio, int fim)
+	public void QuickSortInsertion(List<Integer> listInteiros, int inicio, int fim)
 	{
 		while (inicio < fim)
 		{
