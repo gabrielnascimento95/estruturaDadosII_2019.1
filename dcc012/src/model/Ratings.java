@@ -14,6 +14,10 @@ public class Ratings {
 		this.timeStamp = timeStamp;
 	}
 	
+	public Ratings(int userId) {
+		this.userId = userId;
+		}
+	
 	public Ratings(){
 		
 	}

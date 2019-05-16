@@ -18,4 +18,9 @@
 <fullyQualifiedTypeName name="hashing.HashEnderecamentoAbertoSondagemLinear"/>
 <fullyQualifiedTypeName name="hashing.HashEncadeamentoSeparado.hash"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="model.Ratings"/>
+<fullyQualifiedTypeName name="java.lang.Float"/>
 </qualifiedTypeNameHistroy>

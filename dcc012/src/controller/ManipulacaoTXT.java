@@ -48,10 +48,10 @@ public class ManipulacaoTXT {
 	*/
 	
 	public void gravar(int i, Long tempo){
-		String caminhoArq = "/home/saida.txt";
+		String caminhoArq = "/home/gabriel/saida.txt";
 		 try{
 			BufferedWriter buffWrite = new BufferedWriter(new FileWriter(caminhoArq));
-	        buffWrite.append("Entrada: " +i+"Tempo: "+ tempo+"\n");
+	        buffWrite.append("Entrada: " +i+"Tempo: "+ tempo+ "milessegundos" + "\n");
 	        buffWrite.close();
 		 }catch (IOException e) {
 		     System.err.printf("Erro na gravação do arquivo: %s.\n",

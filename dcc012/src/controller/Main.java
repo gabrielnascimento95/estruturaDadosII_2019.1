@@ -15,24 +15,27 @@ public class Main {
 
 		ManipulacaoTXT arquivoTxt = new ManipulacaoTXT();
 		List<Integer> listEntradas = new ArrayList<Integer>();
+		List<Integer> listUserIdAux = new ArrayList<Integer>();
+		
 		arquivoTxt.ler(listEntradas);
-		System.out.println("\n");
 		System.out.println("---------------Objetos dentro da lista---------------");
-		for(Integer item : listEntradas){
-			System.out.println(item.intValue());
+		System.out.println("Valores de entrada");
+		for(int i =0; i < listEntradas.size(); i++){
+			System.out.println("listEntradas.get("+i+") = " + listEntradas.get(i));
 		}
 		
-		/*
+		
 		LeituraCSV obj = new LeituraCSV();
-		List<Pais> listPais = new ArrayList<Pais>();
-		obj.ler(listPais);
+		List<Ratings> listRatings = new ArrayList<Ratings>();
+		obj.lerRatings(listEntradas.get(0), listRatings);
 		
-		System.out.println("\n");
 		System.out.println("---------------Objetos dentro da lista---------------");
-		for(Pais item : listPais){
-			System.out.println("Código "+ item.getCod() + " Nome: " + item.getNome());
+		for(int i =0; i < listRatings.size(); i++){
+			System.out.println("User ID "+ listRatings.get(i).getUserId() + " MovieID: " + listRatings.get(i).getMovieId());
+			listUserIdAux.add(listRatings.get(i).getUserId());
 		}
-		*/
+		
+				
 		
 		InsertionSort objInsertion = new InsertionSort();
 		BubbleSort objBubble = new BubbleSort();
@@ -43,6 +46,7 @@ public class Main {
 		MeuSort objMeuSort = new MeuSort();
 		HashEnderecamentoAbertoSondagemLinear objHashLinear;
 		
+		/*
 		List<Integer> listInteiros = new ArrayList<Integer>();
 		listInteiros.add(10);
 		listInteiros.add(15);
@@ -67,6 +71,8 @@ public class Main {
 		listInteirosMovieId.add(445);
 		listInteirosMovieId.add(895);
 		
+		*/
+		
 		//long tempoInicio = System.currentTimeMillis();
 		//objInsertion.ordenaInsertSort(listInteiros);
 		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
@@ -82,7 +88,11 @@ public class Main {
 		//objMerge.ordenaMergeSort(listInteiros);
 		//objMerge.imprimeArray(listInteiros);
 		
-		//objQuick.ordenaQuickSort(listInteiros, 0, listInteiros.size()-1);
+		long tempoInicio = System.currentTimeMillis();
+		objQuick.ordenaQuickSort(listUserIdAux, 0, listUserIdAux.size()-1);
+		long tempoFinal = System.currentTimeMillis()-tempoInicio;
+		System.out.println("Tempo de processamento: " + tempoFinal + " milissegundos.");
+		arquivoTxt.gravar(1000, tempoFinal);
 		//objQuick.imprimeArray(listInteiros);
 		
 		//objHeap.ordenaHeapSort(listInteiros);
