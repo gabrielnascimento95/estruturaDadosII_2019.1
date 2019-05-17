@@ -22,9 +22,9 @@ public class HashEnderecamentoAbertoSondagemLinear {
 		System.out.println("Contador de colisoes: " + this.colisoes);
 	}
 		
-	public HashEnderecamentoAbertoSondagemLinear(List<Integer> listEntradas){
-		this.tamanhoDaTabela = listEntradas.size();
-		this.listDicionario = new TermoDicionario[listEntradas.size()];
+	public HashEnderecamentoAbertoSondagemLinear(int tam){
+		this.tamanhoDaTabela = tam;
+		this.listDicionario = new TermoDicionario[tam];
 	}
 
 	public int hash (int valor, int tentativa) {

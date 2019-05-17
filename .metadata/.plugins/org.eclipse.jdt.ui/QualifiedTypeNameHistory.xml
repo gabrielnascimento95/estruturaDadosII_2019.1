@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.HeapSort"/>
 <fullyQualifiedTypeName name="algoritOrdenacao.MeuSort"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="hashing.TermoDicionario"/>
 <fullyQualifiedTypeName name="hashing.HashEnderecamentoAbertoSondagemLinear"/>
@@ -23,4 +22,5 @@
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="model.Ratings"/>
 <fullyQualifiedTypeName name="java.lang.Float"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

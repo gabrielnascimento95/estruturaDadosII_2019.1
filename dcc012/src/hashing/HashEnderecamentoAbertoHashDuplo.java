@@ -18,9 +18,9 @@ public class HashEnderecamentoAbertoHashDuplo {
 		System.out.println("Contador de colisoes: " + colisoes);
 	}
 		
-	public HashEnderecamentoAbertoHashDuplo(List<Integer> listEntradas){
-		this.tamanhoDaTabela = listEntradas.size();
-		dicionario = new TermoDicionario[listEntradas.size()];
+	public HashEnderecamentoAbertoHashDuplo(int tam){
+		this.tamanhoDaTabela = tam;
+		dicionario = new TermoDicionario[tam];
 	}
 
 	int hash (int valor, int tentativa) {
@@ -35,7 +35,7 @@ public class HashEnderecamentoAbertoHashDuplo {
 		return (2*valor+5);
 	}
 
-	boolean insere(int userID, int movieID){
+	public boolean insere(int userID, int movieID){
 		int indice;
 		for (int j=0;j<tamanhoDaTabela;j++){
 			indice = hash(userID,j);

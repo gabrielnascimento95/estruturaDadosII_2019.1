@@ -12,12 +12,12 @@ public class HashEncadeamentoSeparado {
 	private static int tam;
 	private static hash tabela[];
 	
-	public HashEncadeamentoSeparado(List<Integer> listEntrada) {
-		this.tam = listEntrada.size();
-		this.tabela = new hash[listEntrada.size()];
+	public HashEncadeamentoSeparado(int tam) {
+		this.tam = tam;
+		this.tabela = new hash[tam];
 	}
 	
-	public static void inserir(int userID, int movieID){
+	public static void insere(int userID, int movieID){
 		hash novo = new hash();
 		novo.chave = movieID;
 		novo.prox = tabela[userID];

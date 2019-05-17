@@ -18,16 +18,16 @@ public class HashEnderecamentoAbertoSondagemQuadratica {
 		System.out.println("Contador de colisoes: " + colisoes);
 	}
 		
-	public HashEnderecamentoAbertoSondagemQuadratica(List<Integer> listEntradas){
-		this.tamanhoDaTabela = listEntradas.size();
-		dicionario = new TermoDicionario[listEntradas.size()];
+	public HashEnderecamentoAbertoSondagemQuadratica(int tam){
+		this.tamanhoDaTabela = tam;
+		dicionario = new TermoDicionario[tam];
 	}
 
 	int hash (int valor, int tentativa) {
 		return (int)(valor+tentativa*0.5+tentativa*tentativa*0.5) % tamanhoDaTabela;
 	}
 	
-	boolean insere(int userID, int movieID){
+	public boolean insere(int userID, int movieID){
 		int indice;
 		for (int j=0;j<tamanhoDaTabela;j++){
 			indice = hash(userID,j);
