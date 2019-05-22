@@ -44,9 +44,6 @@ public class Main {
 			int aux = t.nextInt();
 			switch(aux){
 			case 0:
-				for(int j = 0; j < listRatings.size(); j++){
-					listUserIdAux.add(listRatings.get(j).getUserId());
-				}
 				InsertionSort objInsertion = new InsertionSort();
 				long tempoInicioInsertion = System.currentTimeMillis();
 				objInsertion.ordenaInsertSort(listUserIdAux);
@@ -55,9 +52,6 @@ public class Main {
 				System.out.println("Tempo de processamento: " + tempoFinalInsertion + " milissegundos.");
 				break;
 			case 1:
-				for(int j = 0; j < listRatings.size(); j++){
-					listUserIdAux.add(listRatings.get(j).getUserId());
-				}
 				MergeSort objMerge = new MergeSort();
 				long tempoInicioMerge = System.currentTimeMillis();
 				objMerge.ordenaMergeSort(listUserIdAux);
@@ -99,65 +93,6 @@ public class Main {
 			break;
 		case 1:
 			obj.lerRatings(listEntradas.get(1), listRatings);
-			System.out.println("Parte 1 - Ordenação\nOs algoritmos serão listados e a execução dar-se-á" +
-					" pelo índice referente à estrutura de dados.\n" +
-					" 0 - InsertionSort\n 1 - MergeSort\n 2 - HeapSort\n" +
-					" 3 - MeuSort\n 4 - QuickSort (Visto em Aula)\n" +
-					" 5 - QuickSortInsercao\n 6 - QuickSortMediana\n");
-			System.out.print("\nDigite o índice referente à estrutura de dados: ");
-			Scanner k = new Scanner(System.in);
-			int l = k.nextInt();
-			switch(l){
-			case 0:
-				for(int j = 0; j < listRatings.size(); j++){
-					listUserIdAux.add(listRatings.get(j).getUserId());
-				}
-				InsertionSort objInsertion = new InsertionSort();
-				long tempoInicioInsertion = System.currentTimeMillis();
-				objInsertion.ordenaInsertSort(listUserIdAux);
-				long tempoFinalInsertion = System.currentTimeMillis()-tempoInicioInsertion;
-				arquivoTxt.gravar(listEntradas.get(1), tempoFinalInsertion);
-				System.out.println("Tempo de processamento: " + tempoFinalInsertion + " milissegundos.");
-				break;
-			case 1:
-				MergeSort objMerge = new MergeSort();
-				long tempoInicioMerge = System.currentTimeMillis();
-				objMerge.ordenaMergeSort(listUserIdAux);
-				long tempoFinalMerge = System.currentTimeMillis()-tempoInicioMerge;
-				arquivoTxt.gravar(listEntradas.get(1), tempoFinalMerge);
-				System.out.println("Tempo de processamento: " + tempoFinalMerge + " milissegundos.");
-				break;
-			case 2:
-				HeapSort objHeap = new HeapSort();
-				long tempoInicioHeap = System.currentTimeMillis();
-				objHeap.ordenaHeapSort(listUserIdAux);
-				long tempoFinalHeap = System.currentTimeMillis()-tempoInicioHeap;
-				System.out.println("Tempo de processamento: " + tempoFinalHeap + " milissegundos.");
-				arquivoTxt.gravar(listEntradas.get(1), tempoFinalHeap);	
-				break;
-			case 3:
-				MeuSort objMeuSort = new MeuSort();
-				long tempoInicioMeu = System.currentTimeMillis();
-				objMeuSort.ordenaMeuSort(listUserIdAux);
-				long tempoFinalMeu = System.currentTimeMillis()-tempoInicioMeu;
-				System.out.println("Tempo de processamento: " + tempoFinalMeu + " milissegundos.");
-				arquivoTxt.gravar(listEntradas.get(1), tempoFinalMeu);
-				break;
-			case 4:
-				QuickSort objQuick = new QuickSort();
-				long tempoInicioQuick = System.currentTimeMillis();
-				objQuick.ordenaQuickSort(listUserIdAux, 0, listUserIdAux.size()-1);
-				long tempoFinalQuick = System.currentTimeMillis()-tempoInicioQuick;
-				System.out.println("Tempo de processamento: " + tempoFinalQuick + " milissegundos.");
-				arquivoTxt.gravar(listEntradas.get(1), tempoFinalQuick);
-				break;
-			case 5:
-				break;
-			case 6:
-				break;
-			default:
-				break;
-			}
 			break;
 		case 2:
 			obj.lerRatings(listEntradas.get(2), listRatings);
@@ -181,13 +116,67 @@ public class Main {
 			listUserIdAux.add(listRatings.get(i).getUserId());
 		}
 		
+		System.out.println("Parte 1 - Ordenação\nOs algoritmos serão listados e a execução dar-se-á" +
+				" pelo índice referente à estrutura de dados.\n" +
+				" 0 - InsertionSort\n 1 - MergeSort\n 2 - HeapSort\n" +
+				" 3 - MeuSort\n 4 - QuickSort (Visto em Aula)");
+		
+		Scanner t = new Scanner(System.in);
+		int aux = t.nextInt();
 		
 		/*
+		InsertionSort objInsertion = new InsertionSort();
+		BubbleSort objBubble = new BubbleSort();
+		SelectionSort objSelection = new SelectionSort();
+		MergeSort objMerge = new MergeSort();
+		QuickSort objQuick = new QuickSort();
+		HeapSort objHeap = new HeapSort();
+		MeuSort objMeuSort = new MeuSort();
 		HashEnderecamentoAbertoSondagemLinear objHashLinear;
 		HashEnderecamentoAbertoSondagemQuadratica objHashQuadratico;
 		HashEnderecamentoAbertoHashDuplo objDuploHash;
 		HashEncadeamentoSeparado objSeparado;
 		*/
+		
+		
+		//long tempoInicio = System.currentTimeMillis();
+		//objInsertion.ordenaInsertSort(listUserIdAux);
+		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
+		//arquivoTxt.gravar(listEntradas.get(5), tempoFinal);
+		//System.out.println("Tempo de processamento: " + tempoFinal + " milissegundos.");
+		//objInsertion.imprimeArray(listInteiros);
+		
+		//objBubble.ordenaBubbleSort(listInteiros);
+		//objBubble.imprimeArray(listInteiros);
+		
+		//objSelection.ordenaSelectionSort(listInteiros);
+		//objSelection.imprimeArray(listInteiros);
+		
+		
+		//objMerge.imprimeArray(listInteiros);
+		
+		//long tempoInicio = System.currentTimeMillis();
+		//objQuick.ordenaQuickSort(listUserIdAux, 0, listUserIdAux.size()-1);
+		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
+		//System.out.println("Tempo de processamento: " + tempoFinal + " milissegundos.");
+		//arquivoTxt.gravar(1000, tempoFinal);
+		//objQuick.imprimeArray(listInteiros);
+		
+		//long tempoInicio = System.currentTimeMillis();
+		//objHeap.ordenaHeapSort(listUserIdAux);
+		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
+		//System.out.println("Tempo de processamento: " + tempoFinal + " milissegundos.");
+		//arquivoTxt.gravar(listEntradas.get(5), tempoFinal);
+		//objHeap.imprimeArray(listInteiros);
+		
+		
+		//long tempoInicio = System.currentTimeMillis();
+		//objMeuSort.ordenaMeuSort(listUserIdAux);
+		//long tempoFinal = System.currentTimeMillis()-tempoInicio;
+		//System.out.println("Tempo de processamento: " + tempoFinal + " milissegundos.");
+		//arquivoTxt.gravar(listEntradas.get(5), tempoFinal);
+		//objMeuSort.imprimeArray(listInteiros);
+		
 		
 		//objHashLinear = new HashEnderecamentoAbertoSondagemLinear(listEntradas.get(0));
 		//objHashQuadratico = new HashEnderecamentoAbertoSondagemQuadratica(listEntradas.get(0));

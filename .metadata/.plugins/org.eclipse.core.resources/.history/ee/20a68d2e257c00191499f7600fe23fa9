@@ -44,9 +44,6 @@ public class Main {
 			int aux = t.nextInt();
 			switch(aux){
 			case 0:
-				for(int j = 0; j < listRatings.size(); j++){
-					listUserIdAux.add(listRatings.get(j).getUserId());
-				}
 				InsertionSort objInsertion = new InsertionSort();
 				long tempoInicioInsertion = System.currentTimeMillis();
 				objInsertion.ordenaInsertSort(listUserIdAux);
@@ -55,9 +52,6 @@ public class Main {
 				System.out.println("Tempo de processamento: " + tempoFinalInsertion + " milissegundos.");
 				break;
 			case 1:
-				for(int j = 0; j < listRatings.size(); j++){
-					listUserIdAux.add(listRatings.get(j).getUserId());
-				}
 				MergeSort objMerge = new MergeSort();
 				long tempoInicioMerge = System.currentTimeMillis();
 				objMerge.ordenaMergeSort(listUserIdAux);
@@ -98,7 +92,7 @@ public class Main {
 			}
 			break;
 		case 1:
-			obj.lerRatings(listEntradas.get(1), listRatings);
+			obj.lerRatings(listEntradas.get(0), listRatings);
 			System.out.println("Parte 1 - Ordenação\nOs algoritmos serão listados e a execução dar-se-á" +
 					" pelo índice referente à estrutura de dados.\n" +
 					" 0 - InsertionSort\n 1 - MergeSort\n 2 - HeapSort\n" +
