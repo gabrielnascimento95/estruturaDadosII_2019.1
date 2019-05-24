@@ -1,0 +1,200 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import model.Ratings;
+import hashing.*;
+
+public class Main2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("---------------Parte 2---------------\n");
+		ManipulacaoTXT arquivoTxt = new ManipulacaoTXT();
+		List<Integer> listEntradas = new ArrayList<Integer>();
+		List<Integer> listUserIdAux = new ArrayList<Integer>();
+		LeituraCSV obj = new LeituraCSV();
+		List<Ratings> listRatings = new ArrayList<Ratings>();
+		arquivoTxt.ler(listEntradas);
+		
+		System.out.println("---------------Objetos dentro da lista---------------\n");
+		for(int i =0; i < listEntradas.size(); i++){
+			System.out.println("Indice["+i+"] = " + listEntradas.get(i));
+		}
+		
+		System.out.print("\nDigite o índice referente a entrada dos dados: ");
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		
+		switch (n) {
+		case 0:
+			obj.lerRatings(listEntradas.get(0), listRatings);
+			System.out.println("Parte 2 - Hashing\nOs algoritmos serão listados e a execução dar-se-á" +
+					" pelo índice referente à estrutura de dados.\n" +
+					" 0 - HashEnderecamentoAbertoSondagemLinear\n 1 - HashEnderecamentoAbertoSondagemQuadratica" +
+					"\n 2 - HashEnderecamentoAbertoHashDuplo\n" +
+					" 3 - HashEncadeamentoSeparado\n");
+			System.out.print("\nDigite o índice referente à estrutura de dados: ");
+			for(int j = 0; j < listRatings.size(); j++){
+				listUserIdAux.add(listRatings.get(j).getUserId());
+			}
+			Scanner t = new Scanner(System.in);
+			int aux = t.nextInt();
+			switch(aux){
+			case 0:
+				HashEnderecamentoAbertoSondagemLinear objHashLinear = 
+				new HashEnderecamentoAbertoSondagemLinear(listEntradas.get(0));
+				
+				break;
+			case 1:
+				HashEnderecamentoAbertoSondagemQuadratica objHashQuadratico =
+				new HashEnderecamentoAbertoSondagemQuadratica(listEntradas.get(0));
+				long tempoInicio02 = System.currentTimeMillis();
+				for(int i = 0; i < listEntradas.get(0); i++){
+					objHashQuadratico.insere(listRatings.get(i).getUserId(), listRatings.get(i).getMovieId());
+				}
+				long tempoFinal02 = System.currentTimeMillis()-tempoInicio02;
+				System.out.println("Tempo de processamento: " + tempoFinal02 + " milissegundos.");
+				arquivoTxt.gravar(listEntradas.get(0), tempoFinal02);
+				break;
+			case 2:
+				HashEnderecamentoAbertoHashDuplo objDuploHash = 
+				new HashEnderecamentoAbertoHashDuplo(listEntradas.get(0));
+				//
+				long tempoInicio = System.currentTimeMillis();
+				for(int i = 0; i < listEntradas.get(0); i++){
+				objDuploHash.insere(listRatings.get(i).getUserId(), listRatings.get(i).getMovieId());
+				}
+				long tempoFinal = System.currentTimeMillis()-tempoInicio;
+				System.out.println("Tempo de processamento: " + tempoFinal + " milissegundos.");
+				arquivoTxt.gravar(listEntradas.get(0), tempoFinal);
+				break;
+			case 3:
+				HashEncadeamentoSeparado objSeparado = 
+				new HashEncadeamentoSeparado(listEntradas.get(0));
+				long tempoInicio03 = System.currentTimeMillis();
+				for(int i = 0; i < listEntradas.get(0); i++){
+					objSeparado.insere(listRatings.get(i).getUserId(), listRatings.get(i).getMovieId());
+				}
+				long tempoFinal03 = System.currentTimeMillis()-tempoInicio03;
+				System.out.println("Tempo de processamento: " + tempoFinal03 + " milissegundos.");
+				arquivoTxt.gravar(listEntradas.get(0), tempoFinal03);
+				
+				break;
+			default:
+				break;
+			}
+			break;
+		case 1:
+			obj.lerRatings(listEntradas.get(1), listRatings);
+			for(int j = 0; j < listRatings.size(); j++){
+				listUserIdAux.add(listRatings.get(j).getUserId());
+			}
+			Scanner k = new Scanner(System.in);
+			int l = k.nextInt();
+			switch(l){
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+			}
+			break;
+		case 2:
+			obj.lerRatings(listEntradas.get(2), listRatings);
+			for(int j = 0; j < listRatings.size(); j++){
+				listUserIdAux.add(listRatings.get(j).getUserId());
+			}
+			Scanner kk = new Scanner(System.in);
+			int ll = kk.nextInt();
+			switch(ll){
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+			}
+			break;
+		case 3:
+			obj.lerRatings(listEntradas.get(3), listRatings);
+			System.out.print("\nDigite o índice referente à estrutura de dados: ");
+			for(int j = 0; j < listRatings.size(); j++){
+				listUserIdAux.add(listRatings.get(j).getUserId());
+			}
+			Scanner kkk = new Scanner(System.in);
+			int lll = kkk.nextInt();
+			switch(lll){
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+			}
+			break;
+		case 4:
+			obj.lerRatings(listEntradas.get(4), listRatings);
+			System.out.print("\nDigite o índice referente à estrutura de dados: ");
+			for(int j = 0; j < listRatings.size(); j++){
+				listUserIdAux.add(listRatings.get(j).getUserId());
+			}
+			Scanner a = new Scanner(System.in);
+			int b = a.nextInt();
+			switch(b){
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+			}
+			break;
+		case 5:
+			obj.lerRatings(listEntradas.get(5), listRatings);
+			System.out.print("\nDigite o índice referente à estrutura de dados: ");
+			for(int j = 0; j < listRatings.size(); j++){
+				listUserIdAux.add(listRatings.get(j).getUserId());
+			}
+			Scanner c = new Scanner(System.in);
+			int d = c.nextInt();
+			switch(d){
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+			}
+			break;	
+		default:
+			break;
+		}
+		System.out.println("---------------Fim da parte 2---------------\n");
+	}
+}

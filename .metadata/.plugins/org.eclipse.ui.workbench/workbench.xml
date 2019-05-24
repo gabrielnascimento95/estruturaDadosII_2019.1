@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="601" maximized="true" width="1006" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -34,62 +34,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashEnderecamentoAbertoSondagemLinear.java" partName="HashEnderecamentoAbertoSondagemLinear.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/hashing/HashEnderecamentoAbertoSondagemLinear.java" title="HashEnderecamentoAbertoSondagemLinear.java" tooltip="dcc012/src/hashing/HashEnderecamentoAbertoSondagemLinear.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/hashing/HashEnderecamentoAbertoSondagemLinear.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="824" selectionTopPixel="48"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashEncadeamentoSeparado.java" partName="HashEncadeamentoSeparado.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/hashing/HashEncadeamentoSeparado.java" title="HashEncadeamentoSeparado.java" tooltip="dcc012/src/hashing/HashEncadeamentoSeparado.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/hashing/HashEncadeamentoSeparado.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="324" selectionTopPixel="136"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EncadeamentoCoalescido.java" partName="EncadeamentoCoalescido.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/hashing/EncadeamentoCoalescido.java" title="EncadeamentoCoalescido.java" tooltip="dcc012/src/hashing/EncadeamentoCoalescido.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/hashing/EncadeamentoCoalescido.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashEncadeamentoCoalescido.java" partName="HashEncadeamentoCoalescido.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/hashing/HashEncadeamentoCoalescido.java" title="HashEncadeamentoCoalescido.java" tooltip="dcc012/src/hashing/HashEncadeamentoCoalescido.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/hashing/HashEncadeamentoCoalescido.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2460" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/Main.java" title="Main.java" tooltip="dcc012/src/controller/Main.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/Main.java" title="Main.java" tooltip="dcc012/src/controller/Main.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4879" selectionTopPixel="2096"/>
+<editorState selectionHorizontalPixel="0" selectionLength="44" selectionOffset="17845" selectionTopPixel="7024"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeituraCSV.java" partName="LeituraCSV.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/LeituraCSV.java" title="LeituraCSV.java" tooltip="dcc012/src/controller/LeituraCSV.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/LeituraCSV.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1926" selectionTopPixel="819"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashEnderecamentoAbertoHashDuplo.java" partName="HashEnderecamentoAbertoHashDuplo.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/hashing/HashEnderecamentoAbertoHashDuplo.java" title="HashEnderecamentoAbertoHashDuplo.java" tooltip="dcc012/src/hashing/HashEnderecamentoAbertoHashDuplo.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/hashing/HashEnderecamentoAbertoHashDuplo.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="68" selectionOffset="1102" selectionTopPixel="403"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManipulacaoTXT.java" partName="ManipulacaoTXT.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/ManipulacaoTXT.java" title="ManipulacaoTXT.java" tooltip="dcc012/src/controller/ManipulacaoTXT.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/ManipulacaoTXT.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1343" selectionTopPixel="118"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" partName="QuickSort.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/algoritOrdenacao/QuickSort.java" title="QuickSort.java" tooltip="dcc012/src/algoritOrdenacao/QuickSort.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/algoritOrdenacao/QuickSort.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="342" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ratings.java" partName="Ratings.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/model/Ratings.java" title="Ratings.java" tooltip="dcc012/src/model/Ratings.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/model/Ratings.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="340" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashEnderecamentoAbertoSondagemQuadratica.java" partName="HashEnderecamentoAbertoSondagemQuadratica.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java" title="HashEnderecamentoAbertoSondagemQuadratica.java" tooltip="dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="897" selectionTopPixel="61"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main2.java" partName="Main2.java" path="/home/gabriel/workspace/estruturaDadosII_2019.1/dcc012/src/controller/Main2.java" title="Main2.java" tooltip="dcc012/src/controller/Main2.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dcc012/src/controller/Main2.java"/>
+<editorState selectionHorizontalPixel="4" selectionLength="0" selectionOffset="1786" selectionTopPixel="701"/>
 </editor>
 </editors>
 <views>
@@ -129,8 +84,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (15 items)"/>
+<category IMemento.internal.id="Warnings (14 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="367" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -327,7 +282,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19224806" ratioLeft="248" ratioRight="1042" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7372372" ratioLeft="491" ratioRight="175" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.7282282" ratioLeft="485" ratioRight="181" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -521,166 +476,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/LeituraCSV.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/ManipulacaoTXT.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/algoritOrdenacao/QuickSort.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/model/Ratings.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/Main.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/hashing/HashEnderecamentoAbertoSondagemLinear.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/hashing/HashEnderecamentoAbertoHashDuplo.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/hashing/HashEncadeamentoSeparado.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/controller/Main2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java"/>
 </editors>
-<item historyLabel="LeituraCSV.java" index="0">
-<position info="not_deleted" x="2182" y="0"/>
-</item>
-<item historyLabel="Ratings.java" index="4">
-<position info="not_deleted" x="340" y="0"/>
-</item>
-<item historyLabel="LeituraCSV.java" index="0">
-<position info="not_deleted" x="2182" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="995" y="0"/>
-</item>
-<item historyLabel="LeituraCSV.java" index="0">
-<position info="not_deleted" x="1926" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="845" y="0"/>
-</item>
-<item historyLabel="ManipulacaoTXT.java" index="2">
-<position info="not_deleted" x="1594" y="0"/>
-</item>
-<item historyLabel="LeituraCSV.java" index="0">
-<position info="not_deleted" x="1926" y="0"/>
-</item>
-<item historyLabel="ManipulacaoTXT.java" index="2">
-<position info="not_deleted" x="1343" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="845" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="2435" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="342" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="1239" y="0"/>
-</item>
-<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="6">
+<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="1">
 <position info="not_deleted" x="824" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="5123" y="0"/>
-</item>
-<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="6">
-<position info="not_deleted" x="539" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="5123" y="0"/>
-</item>
-<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="6">
-<position info="not_deleted" x="539" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="5123" y="0"/>
-</item>
-<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="6">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="1239" y="0"/>
-</item>
-<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="7">
-<position info="not_deleted" x="756" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="1239" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5140" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="7">
-<position info="not_deleted" x="756" y="0"/>
-</item>
-<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="6">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="5140" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5141" y="6"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="7">
+<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="2">
 <position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="4700" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="7">
+<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="2">
 <position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="6">
+<item historyLabel="HashEnderecamentoAbertoSondagemLinear.java" index="1">
 <position info="not_deleted" x="824" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="4700" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5027" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoHashDuplo.java" index="8">
+<item historyLabel="HashEnderecamentoAbertoHashDuplo.java" index="3">
 <position info="not_deleted" x="741" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5140" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="7">
+<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="2">
 <position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoHashDuplo.java" index="8">
+<item historyLabel="HashEnderecamentoAbertoHashDuplo.java" index="3">
 <position info="not_deleted" x="980" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="4949" y="0"/>
 </item>
-<item historyLabel="HashEnderecamentoAbertoHashDuplo.java" index="8">
+<item historyLabel="HashEnderecamentoAbertoHashDuplo.java" index="3">
 <position info="not_deleted" x="1102" y="68"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="4949" y="0"/>
 </item>
-<item historyLabel="HashEncadeamentoSeparado.java" index="9">
+<item historyLabel="HashEncadeamentoSeparado.java" index="4">
 <position info="not_deleted" x="290" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="4949" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5140" y="0"/>
 </item>
-<item historyLabel="HashEncadeamentoSeparado.java" index="9">
+<item historyLabel="HashEncadeamentoSeparado.java" index="4">
 <position info="not_deleted" x="290" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5140" y="0"/>
 </item>
-<item historyLabel="HashEncadeamentoSeparado.java" index="9">
+<item historyLabel="HashEncadeamentoSeparado.java" index="4">
 <position info="not_deleted" x="290" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5147" y="0"/>
 </item>
-<item historyLabel="HashEncadeamentoSeparado.java" index="9">
+<item historyLabel="HashEncadeamentoSeparado.java" index="4">
 <position info="not_deleted" x="324" y="0"/>
 </item>
-<item active="true" historyLabel="Main.java" index="5">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="5147" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="816" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="882" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="837" y="7"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1711" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="3721" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1363" y="0"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17310" y="0"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="17126" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="253" y="17055"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1363" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17628" y="205"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1363" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17629" y="37"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1363" y="0"/>
+</item>
+<item historyLabel="HashEnderecamentoAbertoSondagemQuadratica.java" index="6">
+<position info="not_deleted" x="897" y="0"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1363" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17684" y="41"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1421" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17747" y="32"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1460" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17796" y="24"/>
+</item>
+<item historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1503" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="17845" y="44"/>
+</item>
+<item active="true" historyLabel="Main2.java" index="5">
+<position info="not_deleted" x="1503" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -699,6 +651,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main2.java" tooltip="dcc012/src/controller/Main2.java">
+<persistable path="/dcc012/src/controller/Main2.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashEnderecamentoAbertoSondagemQuadratica.java" tooltip="dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java">
 <persistable path="/dcc012/src/hashing/HashEnderecamentoAbertoSondagemQuadratica.java"/>
 </file>
@@ -740,9 +695,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TermoDicionario.java" tooltip="dcc012/src/hashing/TermoDicionario.java">
 <persistable path="/dcc012/src/hashing/TermoDicionario.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MeuSort.java" tooltip="dcc012/src/algoritOrdenacao/MeuSort.java">
-<persistable path="/dcc012/src/algoritOrdenacao/MeuSort.java"/>
 </file>
 </mruList>
 </workbench>
